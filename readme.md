@@ -63,15 +63,21 @@ Create folders for bee and geth:
 
 Bee needs to interact with the ethereum blockchain for chasing out checks. geth provides a local interface to the blockchain. Alterantivly a public interface can be used. Please see <TODO> for instructions on using a public interface. If using a public interface setting up geth can be skipped.
 
-## install geth
-
-TODO
-
-## setup geth as a service
-
-TODO
+## setup geth
 
 `sudo useradd geth`
+
+`sudo mkdir /home/geth`
+
+`sudo chown geth.geth /home/geth`
+
+`sudo -u geth -s`
+
+`cd /home/geth`
+
+`wget https://gethstore.blob.core.windows.net/builds/geth-linux-arm64-1.10.2-97d11b01.tar.gz`
+
+`tar -xvf geth-linux-arm64-1.10.2-97d11b01.tar.gz`
 
 `sudo nano /lib/systemd/system/geth.service`
 
