@@ -79,6 +79,8 @@ Bee needs to interact with the ethereum blockchain for chasing out checks. geth 
 
 `tar -xvf geth-linux-arm64-1.10.2-97d11b01.tar.gz`
 
+`exit`
+
 `sudo nano /lib/systemd/system/geth.service`
 
 ```
